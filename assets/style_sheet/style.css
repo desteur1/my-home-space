@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: rgb(114, 107, 104);
+}
+body {
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: white;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Saira", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+/* ***********NAV**************** */
+address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 3rem;
+  font-family: "Saira", sans-serif;
+}
+.ma-chambre {
+  margin: 15px 0;
+}
+.ma-chambre img {
+  width: 100%;
+}
+.maison {
+  color: rgba(58, 3, 3, 0.762);
+  text-transform: capitalize;
+}
+/* ********************SECTION 1******************* */
+
+.presentation {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  min-width: 100px;
+  margin-bottom: 40px;
+}
+.chaise {
+  width: 30%;
+  height: 400px;
+  min-width: 100px;
+  background: #736b65;
+}
+h2 {
+  color: white;
+  background-color: #4d2526;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+figcaption + img {
+  width: 100%;
+  display: block;
+}
+.presentation p {
+  color: white;
+  padding: 10px 0;
+}
+.plus-btn {
+  display: block;
+  float: right;
+
+  /* left: 194px; */
+  /* width: 100%; */
+}
+/* #mon-bureau {
+  position: relative;
+  top: 10px;
+}
+#mon-produit {
+  position: relative;
+  top: 11px;
+}
+#mes-services {
+  position: relative;
+  bottom: 7px;
+} */
+
+/* *******************SECTION 2************* */
+
+#section-2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  min-width: 100px;
+}
+.service {
+  width: 30%;
+  min-width: 100px;
+}
+.h-3 {
+  margin: 20px 0;
+}
+ul li::before {
+  margin-left: -0.4rem;
+  content: url(../images/arrow.png);
+}
+ul li {
+  margin: 15px 0;
+  text-align: justify;
+  text-indent: -10px;
+}

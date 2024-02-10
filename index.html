@@ -8,6 +8,7 @@
       content="une présentation de l'intérieure de ma maison"
     />
     <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./assets/style_sheet/style.css" />
     <title>description de ma maison dans tout ses recoins</title>
   </head>
   <body>
@@ -20,61 +21,73 @@
         <a href="tel:0606666606">contact</a>
       </address>
     </nav>
-    <figure>
-      <figcaption><h1>my home space</h1></figcaption>
+    <figure class="ma-chambre">
+      <figcaption>
+        <h1>my <span class="maison">home</span> space</h1>
+      </figcaption>
       <img
         src="./assets/images/carousel/carousel-1.jpg"
         alt="ma chambre à coucher "
       />
     </figure>
     <main>
-      <section>
-        <div>
+      <section class="presentation">
+        <div class="chaise">
           <figure>
             <figcaption><h2>last works</h2></figcaption>
             <img src="./assets/images/chaise-blanche.jpg" alt="le salon" />
           </figure>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, autem dolorum commodi expedita perspiciatis est. Alias
-            nemo sed numquam velit. Assumenda fugiat voluptates quae cumque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis
+            veniam amet blanditiis, molestiae voluptatibus vitae similique ipsam
+            consectetur ullam. Earum fuga error ipsa rem!
           </p>
-          <img src="./assets/images/plus_btn_h.png" alt="icon plus_btn_h" />
+          <span class="plus-btn"
+            ><img
+              src="./assets/images/plus_btn.png"
+              id="mon-bureau"
+              alt="icon plus_btn_h"
+          /></span>
         </div>
-        <div>
+        <div class="chaise">
           <figure>
-            <figcaption><h2 id="main-product">products</h2></figcaption>
+            <figcaption><h2>products</h2></figcaption>
             <img
               src="./assets/images/chaise-rouge.jpg"
               alt="la salle d'attente pour les visiteurs"
             />
           </figure>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            incidunt, blanditiis deleniti, suscipit cum laboriosam cumque,
-            placeat saepe commodi tenetur quod! Nam, voluptates repellat.
-            Explicabo, maxime reprehenderit. Porro, non illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            perspiciatis quos cupiditate autem id mollitia labore dolores
+            veniam, corrupti natus ea culpa quia ad tempora.
           </p>
-          <img src="./assets/images/plus_btn_h.png" alt="icon plus_btn_h" />
+          <span class="plus-btn"
+            ><img
+              src="./assets/images/plus_btn.png"
+              id="mon-produit"
+              alt="icon plus-btn"
+          /></span>
         </div>
-        <div>
+        <div class="chaise">
           <figure>
             <figcaption><h2 id="main-service">service</h2></figcaption>
             <img src="./assets/images/lit.jpg" alt="la chambre d'inviter" />
           </figure>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            dolorum porro perspiciatis eaque voluptatibus assumenda molestias
-            ducimus fuga modi in itaque voluptas, dicta natus omnis cum hic id
-            et at?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            dolore voluptas laudantium, fuga illum nostrum ea molestiae aut
+            numquam tempore illo molestias adipisci porro deserunt!
           </p>
-          <span></span>
+          <span class="plus-btn"
+            ><img src="./assets/images/plus_btn.png" id="mes-services"
+          /></span>
         </div>
       </section>
-      <section>
-        <article>
-          <h3>testimonials</h3>
-          <ul>
+      <section id="section-2">
+        <article class="service">
+          <p class="h-3">Testimonials</p>
+          <ul class="list-item">
             <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
             <li>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eum
@@ -86,9 +99,9 @@
             <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
           </ul>
         </article>
-        <article>
-          <h3>premium services</h3>
-          <p>
+        <article class="service">
+          <p class="h-3">Premium services</p>
+          <p class="mon-paragraphe">
             <strong
               >Lorem ipsum, dolor sit amet consectetur adipisicing.</strong
             >
@@ -100,9 +113,9 @@
           </p>
           <button type="button">read more</button>
         </article>
-        <article>
-          <h3 id="about-us">about us</h3>
-          <p>
+        <article class="service">
+          <p class="h-3">About us</p>
+          <p class="mon-paragraphe">
             <strong
               >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptates recusandae nisi fuga.</strong
