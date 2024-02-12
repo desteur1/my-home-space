@@ -7,8 +7,10 @@
 }
 html {
   background-color: rgb(114, 107, 104);
+  scroll-behavior: smooth;
 }
 body {
+  font-family: "saair", sans-serif;
   width: 60%;
   margin-right: 20%;
   margin-left: 20%;
@@ -29,6 +31,13 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-transform: uppercase;
+  font-family: "saira", sans-serif;
+}
+address a:first-child {
+  background: #4d2526;
+  color: white;
+  padding: 25px;
 }
 h1 {
   display: flex;
@@ -60,14 +69,15 @@ h1 {
   justify-content: space-around;
   height: 400px;
   width: 100%;
-  min-width: 100px;
+  /* min-width: 150px; */
   margin-bottom: 40px;
 }
 .chaise {
   width: 30%;
   height: 400px;
-  min-width: 100px;
+  /* min-width: 150px; */
   background: #736b65;
+  position: relative;
 }
 h2 {
   color: white;
@@ -86,8 +96,11 @@ figcaption + img {
   padding: 10px 0;
 }
 .plus-btn {
-  display: block;
-  float: right;
+  /* display: block;
+  float: right; */
+  position: absolute;
+  right: 0;
+  bottom: -4px;
 
   /* left: 194px; */
   /* width: 100%; */
@@ -120,15 +133,57 @@ figcaption + img {
   width: 30%;
   min-width: 100px;
 }
+#read-more1 {
+  position: relative;
+}
+#read-more2 {
+  position: relative;
+}
 .h-3 {
   margin: 20px 0;
 }
-ul li::before {
-  margin-left: -0.4rem;
-  content: url(../images/arrow.png);
+ul {
+  list-style: url(../images/arrow.png);
 }
 ul li {
+  margin: 15px 15px;
+
+  /* text-indent: -5px; */
+  /* padding-right: 10px; */
+}
+#item {
+  text-wrap: left;
+}
+#section-2 p {
   margin: 15px 0;
-  text-align: justify;
-  text-indent: -10px;
+}
+strong {
+  color: rgb(106 3 3);
+}
+button {
+  padding: 10px 10px 15px 10px;
+  background: rgb(69 65 65 / 90%);
+  color: white;
+  text-transform: capitalize;
+  position: absolute;
+  left: 0;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+/* ***************FOOTER************************** */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+footer img {
+  height: 20px;
+  width: 20px;
+  text-decoration: #736b65;
 }
