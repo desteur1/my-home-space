@@ -16,7 +16,7 @@
       <address>
         <a href="#">Home</a>
         <a href="#about-us">about us</a>
-        <a href="#main-product">products</a>
+        <a href="#mon-produit">products</a>
         <a href="#main-service">service</a>
         <a href="tel:0606666606">contact</a>
       </address>
@@ -51,7 +51,7 @@
         </div>
         <div class="chaise">
           <figure>
-            <figcaption><h2>products</h2></figcaption>
+            <figcaption><h2 id="mon-produit">products</h2></figcaption>
             <img
               src="./assets/images/chaise-rouge.jpg"
               alt="la salle d'attente pour les visiteurs"
@@ -66,7 +66,7 @@
             ><img
               src="./assets/images/plus_btn.png"
               id="mon-produit"
-              alt="icon plus-btn"
+              alt="icon plus-button"
           /></span>
         </div>
         <div class="chaise">
@@ -80,16 +80,16 @@
             numquam tempore illo molestias adipisci porro deserunt!
           </p>
           <span class="plus-btn"
-            ><img src="./assets/images/plus_btn.png" id="mes-services"
+            ><img src="./assets/images/plus_btn.png" alt="plus-button"
           /></span>
         </div>
       </section>
       <section id="section-2">
         <article class="service">
           <p class="h-3">Testimonials</p>
-          <ul class="list-item">
+          <ul role="list" class="list-item">
             <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>
+            <li id="item">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eum
               nihil, dolore doloribus odio magnam recusandae nisi vel dolor
               perferendis?
@@ -99,7 +99,7 @@
             <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
           </ul>
         </article>
-        <article class="service">
+        <article class="service" id="read-more1">
           <p class="h-3">Premium services</p>
           <p class="mon-paragraphe">
             <strong
@@ -113,8 +113,8 @@
           </p>
           <button type="button">read more</button>
         </article>
-        <article class="service">
-          <p class="h-3">About us</p>
+        <article class="service" id="read-more2">
+          <p class="h-3" id="about-us">About us</p>
           <p class="mon-paragraphe">
             <strong
               >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -130,6 +130,7 @@
           <button type="button">read more</button>
         </article>
       </section>
+      <hr />
     </main>
     <footer>
       <div>
@@ -141,6 +142,7 @@
         <a href=""
           ><img
             src="./assets/images/twitter.png"
+            id="mon-compte-twitter"
             alt="contactez moi sur twitter"
         /></a>
         <a href="mailto:shmurdanoah@gmail.com"
