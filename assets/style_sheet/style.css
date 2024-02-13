@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Saira:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,12 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "saair", sans-serif;
+  font-family: "saira", sans-serif;
   width: 60%;
   margin-right: 20%;
   margin-left: 20%;
   background-color: white;
   align-content: center;
+  position: relative;
 }
 
 a {
@@ -30,12 +30,15 @@ li {
 address {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
   text-transform: uppercase;
+  position: fixed;
+  width: 60%;
   font-family: "saira", sans-serif;
 }
 address a:first-child {
-  background: #4d2526;
+  background: rgba(58, 3, 3, 0.762);
   color: white;
   padding: 25px;
 }
@@ -44,11 +47,11 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   text-transform: capitalize;
-  letter-spacing: -2px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 3rem;
-  font-family: "Saira", sans-serif;
+  letter-spacing: 5px;
+  padding-top: 20%;
+  padding-bottom: 50px;
+  font-size: 7.5rem;
+  font-family: "oswald", sans-serif;
 }
 .ma-chambre {
   margin: 15px 0;
@@ -67,14 +70,14 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 400px;
+  height: 450px;
   width: 100%;
   /* min-width: 150px; */
   margin-bottom: 40px;
 }
 .chaise {
   width: 30%;
-  height: 400px;
+  height: 450px;
   /* min-width: 150px; */
   background: #736b65;
   position: relative;
@@ -86,6 +89,7 @@ h2 {
   height: 50px;
   text-align: center;
   padding: 10px;
+  text-transform: uppercase;
 }
 figcaption + img {
   width: 100%;
@@ -100,7 +104,7 @@ figcaption + img {
   float: right; */
   position: absolute;
   right: 0;
-  bottom: -4px;
+  bottom: -7px;
 
   /* left: 194px; */
   /* width: 100%; */
@@ -125,13 +129,15 @@ figcaption + img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 400px;
+  min-height: 450px;
   width: 100%;
   min-width: 100px;
+  overflow: hidden;
 }
 .service {
   width: 30%;
   min-width: 100px;
+  min-height: 450px;
 }
 #read-more1 {
   position: relative;
@@ -185,5 +191,9 @@ footer {
 footer img {
   height: 20px;
   width: 20px;
-  text-decoration: #736b65;
+  border-color: #736b65;
+  opacity: 0.7;
+}
+footer img:hover {
+  opacity: 1;
 }
