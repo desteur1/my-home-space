@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,30 +13,31 @@
   </head>
   <body>
     <nav>
-      <address>
-        <a href="#">Home</a>
-        <a href="#about-us">about us</a>
-        <a href="#mon-produit">products</a>
-        <a href="#main-service">service</a>
-        <a href="tel:0606666606">contact</a>
-      </address>
-
-      <figure class="ma-chambre">
-        <figcaption>
-          <h1>my <span class="maison">home</span> space</h1>
-        </figcaption>
-        <img
-          src="./assets/images/carousel/carousel-1.jpg"
-          alt="ma chambre à coucher "
-        />
-      </figure>
+      <a href="#">Home</a>
+      <a href="#about-us">about us</a>
+      <a href="#mon-produit">products</a>
+      <a href="#main-service">service</a>
+      <a href="#contactez-nous">contact</a>
     </nav>
+
+    <figure class="ma-chambre">
+      <h1>my <span class="maison">home</span> space</h1>
+      <img
+        src="./assets/images/carousel/carousel-1.jpg"
+        alt="ma chambre à coucher "
+      />
+    </figure>
+
     <main>
       <section class="presentation">
         <div class="chaise">
           <figure>
-            <figcaption><h2>last works</h2></figcaption>
-            <img src="./assets/images/chaise-blanche.jpg" alt="le salon" />
+            <h2>last works</h2>
+            <img
+              class="mon-image"
+              src="./assets/images/chaise-blanche.jpg"
+              alt="le salon"
+            />
           </figure>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis
@@ -52,8 +53,9 @@
         </div>
         <div class="chaise">
           <figure>
-            <figcaption><h2 id="mon-produit">products</h2></figcaption>
+            <h2 id="mon-produit">products</h2>
             <img
+              class="mon-image"
               src="./assets/images/chaise-rouge.jpg"
               alt="la salle d'attente pour les visiteurs"
             />
@@ -64,16 +66,17 @@
             veniam, corrupti natus ea culpa quia ad tempora.
           </p>
           <span class="plus-btn"
-            ><img
-              src="./assets/images/plus_btn.png"
-              id="mon-produit"
-              alt="icon plus-button"
+            ><img src="./assets/images/plus_btn.png" alt="icon plus-button"
           /></span>
         </div>
         <div class="chaise">
           <figure>
-            <figcaption><h2 id="main-service">service</h2></figcaption>
-            <img src="./assets/images/lit.jpg" alt="la chambre d'inviter" />
+            <h2 id="main-service">service</h2>
+            <img
+              class="mon-image"
+              src="./assets/images/lit.jpg"
+              alt="la chambre d'inviter"
+            />
           </figure>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
@@ -85,10 +88,10 @@
           /></span>
         </div>
       </section>
-      <section id="section-2">
+      <div id="section-2">
         <article class="service">
-          <p class="h-3">Testimonials</p>
-          <ul role="list" class="list-item">
+          <h3 class="h-3">Testimonials</h3>
+          <ul class="list-item">
             <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
             <li id="item">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eum
@@ -101,7 +104,7 @@
           </ul>
         </article>
         <article class="service" id="read-more1">
-          <p class="h-3">Premium services</p>
+          <h3 class="h-3">Premium services</h3>
           <p class="mon-paragraphe">
             <strong
               >Lorem ipsum, dolor sit amet consectetur adipisicing.</strong
@@ -115,7 +118,7 @@
           <button type="button">read more</button>
         </article>
         <article class="service" id="read-more2">
-          <p class="h-3" id="about-us">About us</p>
+          <h3 class="h-3" id="about-us">About us</h3>
           <p class="mon-paragraphe">
             <strong
               >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -130,11 +133,11 @@
           </p>
           <button type="button">read more</button>
         </article>
-      </section>
+      </div>
       <hr />
     </main>
     <footer>
-      <div>
+      <div id="contactez-nous">
         <a href="https://www.facebook.com/earo.diesel/"
           ><img
             src="./assets/images/myface2.png"
@@ -147,9 +150,7 @@
             alt="contactez moi sur twitter"
         /></a>
         <a href="mailto:shmurdanoah@gmail.com"
-          ><img
-            src="./assets/images/my google1.png"
-            alt="contactez moi par mail"
+          ><img src="./assets/images/my-google1.png" alt="mon compte google"
         /></a>
       </div>
       <small>Desing by Ispace</small>
