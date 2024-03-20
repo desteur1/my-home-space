@@ -15,7 +15,7 @@ body {
   margin-left: 20%;
   background-color: white;
   align-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 a {
@@ -27,17 +27,17 @@ li {
   list-style-type: none;
 }
 /* ***********NAV**************** */
-address {
+nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   text-transform: uppercase;
-  position: fixed;
-  width: 60%;
+  /* position: fixed; */
+  /* width: 60%; */
   font-family: "saira", sans-serif;
 }
-address a:first-child {
+nav a:first-child {
   background: rgba(58, 3, 3, 0.762);
   color: white;
   padding: 25px;
@@ -80,7 +80,13 @@ h1 {
   height: 450px;
   /* min-width: 150px; */
   background: #736b65;
-  position: relative;
+  /* position: relative; */
+}
+.chaise .plus-btn {
+  max-height: 53px;
+  min-height: 10px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 h2 {
   color: white;
@@ -91,7 +97,7 @@ h2 {
   padding: 10px;
   text-transform: uppercase;
 }
-figcaption + img {
+.chaise .mon-image {
   width: 100%;
   display: block;
 }
@@ -100,11 +106,12 @@ figcaption + img {
   padding: 10px 0;
 }
 .plus-btn {
+  display: flex;
   /* display: block;
   float: right; */
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  bottom: -7px;
+  bottom: -7px; */
 
   /* left: 194px; */
   /* width: 100%; */
@@ -139,12 +146,6 @@ figcaption + img {
   min-width: 100px;
   min-height: 450px;
 }
-#read-more1 {
-  position: relative;
-}
-#read-more2 {
-  position: relative;
-}
 .h-3 {
   margin: 20px 0;
 }
@@ -157,9 +158,9 @@ ul li {
   /* text-indent: -5px; */
   /* padding-right: 10px; */
 }
-#item {
+/* #item {
   text-wrap: left;
-}
+} */
 #section-2 p {
   margin: 15px 0;
 }
@@ -171,8 +172,8 @@ button {
   background: rgb(69 65 65 / 90%);
   color: white;
   text-transform: capitalize;
-  position: absolute;
-  left: 0;
+  /* position: absolute;
+  left: 0; */
 }
 
 hr {

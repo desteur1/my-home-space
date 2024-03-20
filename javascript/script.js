@@ -1,0 +1,13 @@
+let section = document.createElement("section");
+let titre = document.createElement("h1");
+let titreTexte = document.createTextNode("troisième titre");
+titre.appendChild(titreTexte);
+let paragraphe = document.createElement("p");
+let paragrapheTexte = document.createTextNode("Nouveau paragraphe");
+paragraphe.appendChild(paragrapheTexte);
+section.appendChild(titre);
+section.appendChild(paragraphe);
+let main = document.querySelector("main");
+main.appendChild(section);
+//titre.classList.add("styleVert");
+paragraphe.classList.add("passe");
