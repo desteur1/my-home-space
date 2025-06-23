@@ -80,13 +80,16 @@ h1 {
   height: 450px;
   /* min-width: 150px; */
   background: #736b65;
-  /* position: relative; */
+  position: relative;
 }
 .chaise .plus-btn {
   max-height: 53px;
   min-height: 10px;
   display: flex;
   flex-direction: row-reverse;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 h2 {
   color: white;
@@ -105,29 +108,6 @@ h2 {
   color: white;
   padding: 10px 0;
 }
-.plus-btn {
-  display: flex;
-  /* display: block;
-  float: right; */
-  /* position: absolute;
-  right: 0;
-  bottom: -7px; */
-
-  /* left: 194px; */
-  /* width: 100%; */
-}
-/* #mon-bureau {
-  position: relative;
-  top: 10px;
-}
-#mon-produit {
-  position: relative;
-  top: 11px;
-}
-#mes-services {
-  position: relative;
-  bottom: 7px;
-} */
 
 /* *******************SECTION 2************* */
 
@@ -197,4 +177,59 @@ footer img {
 }
 footer img:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-top: 10%;
+    padding-bottom: 20px;
+  }
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .chaise {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #section-2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .service {
+    width: 90%;
+    /* height: auto; */
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    /* flex-direction: column;
+    align-items: center; */
+    text-transform: none;
+  }
+  nav a:first-child {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 3rem;
+    padding-top: 10%;
+    padding-bottom: 20px;
+  }
 }
